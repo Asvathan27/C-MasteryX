@@ -9,10 +9,15 @@ A curated repository of C programming solutions, problem-solving techniques, and
 ```text
 C MasteryX/
 ├── README.md
-└── Day 1/
-    ├── armstrong_number.c
-    ├── perfect_number.c
-    └── fizzbuzz.c
+├── Day 1/
+│   ├── armstrong_number.c
+│   ├── perfect_number.c
+│   └── fizzbuzz.c
+│
+└── Day 2/
+    ├── longest_palindromic_substring.c
+    ├── first_non_repeating_character.c
+    └── remove_duplicates_preserving_order.c
 ```
 
 ---
@@ -42,20 +47,55 @@ C MasteryX/
 
 ---
 
+## 🚀 Day 2 Topics & Problems (String Manipulation & Optimization)
+
+### 1. Longest Palindromic Substring (`longest_palindromic_substring.c`)
+- **Description**: Finds the longest contiguous palindromic substring in a given string using the Center Expansion (Two Pointers) algorithm.
+- **Complexity**: $O(n^2)$ Time | $O(1)$ Auxiliary Space
+- **Examples**:
+  - `babad` $\rightarrow$ `bab`
+  - `cbbd` $\rightarrow$ `bb`
+
+### 2. First Non-Repeating Character (`first_non_repeating_character.c`)
+- **Description**: Finds the first character in the string that appears exactly once. Returns `-1` if all characters repeat.
+- **Complexity**: $O(n)$ Time | $O(1)$ Space (256 ASCII Frequency Table)
+- **Examples**:
+  - `swiss` $\rightarrow$ `w`
+  - `aabbcc` $\rightarrow$ `-1`
+
+### 3. Remove Duplicates Preserving Order (`remove_duplicates_preserving_order.c`)
+- **Description**: Removes duplicate characters from a string while maintaining the original first occurrence position of each character.
+- **Complexity**: $O(n)$ Time | $O(1)$ Space (256 ASCII Boolean Lookup)
+- **Examples**:
+  - `programming` $\rightarrow$ `progamin`
+  - `banana` $\rightarrow$ `ban`
+
+---
+
 ## 🛠️ How to Compile & Run
 
 To compile any of the C files using `gcc`:
 
+### Day 1:
 ```bash
-# Compile Armstrong Number
 gcc "Day 1/armstrong_number.c" -o armstrong_number -lm
 ./armstrong_number
 
-# Compile Perfect Number
 gcc "Day 1/perfect_number.c" -o perfect_number
 ./perfect_number
 
-# Compile FizzBuzz
 gcc "Day 1/fizzbuzz.c" -o fizzbuzz
 ./fizzbuzz
+```
+
+### Day 2:
+```bash
+gcc "Day 2/longest_palindromic_substring.c" -o longest_palindromic_substring
+./longest_palindromic_substring
+
+gcc "Day 2/first_non_repeating_character.c" -o first_non_repeating_character
+./first_non_repeating_character
+
+gcc "Day 2/remove_duplicates_preserving_order.c" -o remove_duplicates_preserving_order
+./remove_duplicates_preserving_order
 ```
