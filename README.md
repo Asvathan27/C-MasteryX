@@ -25,11 +25,29 @@ C MasteryX/
 │   ├── q2_count_digit.c
 │   └── q3_reverse_number.c
 │
-└── Day 4/
+├── Day 4/
+│   ├── README.md
+│   ├── q1_move_zeros.c
+│   ├── q2_max_subarray_sum.c
+│   └── q3_array_intersection.c
+│
+├── Day 5/
+│   ├── README.md
+│   ├── q1_hollow_diamond.c
+│   ├── q2_hourglass.c
+│   └── q3_pascal_triangle.c
+│
+├── Day 6/
+│   ├── README.md
+│   ├── q1_student_structure.c
+│   ├── q2_employee_structure.c
+│   └── q3_book_structure.c
+│
+└── Day 7/
     ├── README.md
-    ├── q1_move_zeros.c
-    ├── q2_max_subarray_sum.c
-    └── q3_array_intersection.c
+    ├── q1_swap_pointers.c
+    ├── q2_reverse_array_pointers.c
+    └── q3_max_min_pointers.c
 ```
 
 ---
@@ -116,6 +134,45 @@ C MasteryX/
 
 ---
 
+## 🚀 Day 5 Topics & Problems (Pattern Printing & Pascal Triangle)
+
+### 1. Hollow Diamond Pattern (`q1_hollow_diamond.c`)
+- **Description**: Prints a hollow diamond pattern of stars with only border stars displayed.
+
+### 2. Hourglass Pattern (`q2_hourglass.c`)
+- **Description**: Prints a solid hourglass pattern of stars separated by spaces.
+
+### 3. Pascal's Triangle (`q3_pascal_triangle.c`)
+- **Description**: Prints a centered Pascal's Triangle using combinatorial formulas.
+
+---
+
+## 🚀 Day 6 Topics & Problems (Structures in C)
+
+### 1. Student Structure (`q1_student_structure.c`)
+- **Description**: Reads and displays student records with full name whitespace support.
+
+### 2. Employee Structure (`q2_employee_structure.c`)
+- **Description**: Reads and displays employee ID, name, and salary with double precision.
+
+### 3. Book Structure (`q3_book_structure.c`)
+- **Description**: Reads and displays book title, author, and price.
+
+---
+
+## 🚀 Day 7 Topics & Problems (Pointers & Memory Manipulation)
+
+### 1. Swap Using Pointers (`q1_swap_pointers.c`)
+- **Description**: Swaps two integers by reference using pointer addresses.
+
+### 2. Reverse Array Using Two Pointers (`q2_reverse_array_pointers.c`)
+- **Description**: Reverses an array in-place using two converging pointers.
+
+### 3. Maximum and Minimum Using Pointer Arithmetic (`q3_max_min_pointers.c`)
+- **Description**: Traverses and finds the minimum/maximum elements exclusively using pointer arithmetic (`*(ptr + i)`).
+
+---
+
 ## 🛠️ How to Compile & Run
 
 To compile any of the C files using `gcc`:
@@ -165,5 +222,41 @@ gcc "Day 4/q2_max_subarray_sum.c" -o q2
 ./q2
 
 gcc "Day 4/q3_array_intersection.c" -o q3
+./q3
+```
+
+### Day 5:
+```bash
+gcc "Day 5/q1_hollow_diamond.c" -o q1
+./q1
+
+gcc "Day 5/q2_hourglass.c" -o q2
+./q2
+
+gcc "Day 5/q3_pascal_triangle.c" -o q3
+./q3
+```
+
+### Day 6:
+```bash
+gcc "Day 6/q1_student_structure.c" -o q1
+./q1
+
+gcc "Day 6/q2_employee_structure.c" -o q2
+./q2
+
+gcc "Day 6/q3_book_structure.c" -o q3
+./q3
+```
+
+### Day 7:
+```bash
+gcc "Day 7/q1_swap_pointers.c" -o q1
+./q1
+
+gcc "Day 7/q2_reverse_array_pointers.c" -o q2
+./q2
+
+gcc "Day 7/q3_max_min_pointers.c" -o q3
 ./q3
 ```
