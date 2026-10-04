@@ -19,11 +19,17 @@ C MasteryX/
 │   ├── first_non_repeating_character.c
 │   └── remove_duplicates_preserving_order.c
 │
-└── DAY 3/
+├── DAY 3/
+│   ├── README.md
+│   ├── q1_prime_check.c
+│   ├── q2_count_digit.c
+│   └── q3_reverse_number.c
+│
+└── Day 4/
     ├── README.md
-    ├── q1_prime_check.c
-    ├── q2_count_digit.c
-    └── q3_reverse_number.c
+    ├── q1_move_zeros.c
+    ├── q2_max_subarray_sum.c
+    └── q3_array_intersection.c
 ```
 
 ---
@@ -95,6 +101,21 @@ C MasteryX/
 
 ---
 
+## 🚀 Day 4 Topics & Problems (Arrays & Kadane's Algorithm)
+
+### 1. Move Zeros to End (`q1_move_zeros.c`)
+- **Description**: Moves all `0`s to the end of the array while keeping the relative order of non-zero elements using an in-place two-pointer approach.
+- **Function**: `void moveZeros(int arr[], int n)`
+
+### 2. Maximum Subarray Sum (`q2_max_subarray_sum.c`)
+- **Description**: Finds the maximum contiguous subarray sum using Kadane's algorithm, handling arrays with all negative numbers.
+- **Function**: `int maxSubarraySum(int arr[], int n)`
+
+### 3. Array Intersection (`q3_array_intersection.c`)
+- **Description**: Finds and prints common elements across two arrays using nested loops without hash tables, avoiding duplicate outputs.
+
+---
+
 ## 🛠️ How to Compile & Run
 
 To compile any of the C files using `gcc`:
@@ -132,5 +153,17 @@ gcc "DAY 3/q2_count_digit.c" -o q2
 ./q2
 
 gcc "DAY 3/q3_reverse_number.c" -o q3
+./q3
+```
+
+### Day 4:
+```bash
+gcc "Day 4/q1_move_zeros.c" -o q1
+./q1
+
+gcc "Day 4/q2_max_subarray_sum.c" -o q2
+./q2
+
+gcc "Day 4/q3_array_intersection.c" -o q3
 ./q3
 ```
