@@ -14,10 +14,16 @@ C MasteryX/
 │   ├── perfect_number.c
 │   └── fizzbuzz.c
 │
-└── Day 2/
-    ├── longest_palindromic_substring.c
-    ├── first_non_repeating_character.c
-    └── remove_duplicates_preserving_order.c
+├── Day 2/
+│   ├── longest_palindromic_substring.c
+│   ├── first_non_repeating_character.c
+│   └── remove_duplicates_preserving_order.c
+│
+└── DAY 3/
+    ├── README.md
+    ├── q1_prime_check.c
+    ├── q2_count_digit.c
+    └── q3_reverse_number.c
 ```
 
 ---
@@ -72,6 +78,23 @@ C MasteryX/
 
 ---
 
+## 🚀 Day 3 Topics & Problems (Prime Validation & Recursion)
+
+### 1. Prime Number Checker (`q1_prime_check.c`)
+- **Description**: Checks whether a positive integer is prime by validating factors up to $\sqrt{n}$.
+- **Function**: `int isPrime(int n)`
+- **Edge cases handled**: $n \le 1$ is not prime, $n = 2$ is prime.
+
+### 2. Recursive Digit Occurrence Counter (`q2_count_digit.c`)
+- **Description**: Counts the number of occurrences of a digit ($0-9$) in a positive integer using recursion.
+- **Function**: `int countDigit(int n, int d)`
+
+### 3. Recursive Number Reversal (`q3_reverse_number.c`)
+- **Description**: Reverses the digits of a positive integer using recursion.
+- **Function**: `int reverseNum(int n, int rev)`
+
+---
+
 ## 🛠️ How to Compile & Run
 
 To compile any of the C files using `gcc`:
@@ -98,4 +121,16 @@ gcc "Day 2/first_non_repeating_character.c" -o first_non_repeating_character
 
 gcc "Day 2/remove_duplicates_preserving_order.c" -o remove_duplicates_preserving_order
 ./remove_duplicates_preserving_order
+```
+
+### Day 3:
+```bash
+gcc "DAY 3/q1_prime_check.c" -o q1 -lm
+./q1
+
+gcc "DAY 3/q2_count_digit.c" -o q2
+./q2
+
+gcc "DAY 3/q3_reverse_number.c" -o q3
+./q3
 ```
